@@ -18,6 +18,16 @@ This app has two main functions
    
    user will not be allowed to access the data without logging in
    
-2. feeding them with the news
+2. feeding them with the news\
+
   -newsAPI.org [API for feeding the specific news]
+  
   -right now the application is feeding the news about disability through an API call to newsAPI.org
+  
+  # Improvementes can be done
+  
+  1. sending email to the user everyday , can be done by nodemailer
+  
+  2.Getting the user preference
+  
+  3.work on UI/UX as it is aplatform mainly for PWDs so this app shouled be accessible to every user
