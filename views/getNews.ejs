@@ -1,5 +1,32 @@
+<%- include('partials/header'); -%>
 
 
-<h1>news</h1>
+<div class="wrapper">
+    <div class="news">
+        <% articles.forEach(function(article, index) { %>
+            <!-- <div>
+                <strong>
+                    Sr No. <%- index + 1 %>
+                </strong>  
+            </div> -->
+           
+                <a href="<%-article.url%>" class="news_card">
 
-<%= articles%> 
+                    <img src="<%-article.urlToImage%>" alt="">
+                    
+                    <h2><%- article.title%> </h2>
+                
+                    <p><%- article.description%></p>
+                   
+                </a>
+           
+            <!-- <p>
+                <%- article.description%>
+            </p>
+            -->
+        <%})%>
+        
+    </div>
+</div>
+
+<%- include('partials/footer'); -%>

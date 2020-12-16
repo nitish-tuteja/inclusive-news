@@ -5,13 +5,15 @@ const hitApi = () => new Promise((resolve, reject) => {
     // To query /v2/top-headlines
     // All options passed to topHeadlines are optional, but you need to include at least one of them
     newsapi.v2.everything({
-        q: 'disability '
+        q: 'disability',
+        language: 'en',
     }).then(response => {
         console.log("response", response);
         if (response.status === "ok") {
             resolve(response.articles);
         } 
         else {
+            console.log("reject", response);
             reject(JSON.stringify({
                 errorCode: 400,
                 errorMessage: "Error"

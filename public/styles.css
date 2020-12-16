@@ -112,24 +112,25 @@ header .btn{
   display: inline-block;
   font-size: 0.8em;
 }
-.recipes{
+.news{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   column-gap: 30px;
   row-gap: 80px;
   margin: 80PX AUTO;
   max-width: 1200px;
 }
-.recipe{
+.news_card{
   display: inline-block;
   border-radius: 20px;
   background: white;
   position: relative;
-  text-align: center;
+  
   padding: 0 20px 30px 20px
 }
-.recipe img{
-  width: 100px;
+.news_card img{
+  width: 300px;
+  height: 170px;
   margin: -30px auto 20px;
 }
 footer{

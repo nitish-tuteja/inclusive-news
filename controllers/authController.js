@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const {hitApi} = require("../utility/common");
 const jwt = require('jsonwebtoken');
 
 // handle errors
@@ -72,6 +73,7 @@ module.exports.login_post = async (req, res) => {
   const { email, password } = req.body;
 
   try {
+    // await hitApi();
     const user = await User.login(email, password);
     const token = createToken(user._id);
     res.cookie('jwt', token, { httpOnly: true, maxAge: maxAge * 1000 });
