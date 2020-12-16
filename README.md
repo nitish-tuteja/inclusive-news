@@ -30,4 +30,4 @@ This app has two main functions
   
   2.Getting the user preference
   
-  3.work on UI/UX as it is aplatform mainly for PWDs so this app shouled be accessible to every user
+  3.work on UI/UX as it is a platform mainly for PWDs so this app shouled be accessible to every user
