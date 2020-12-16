@@ -7,9 +7,13 @@ it will show the news related to disability only
 This app has two main functions
 
 1. user authentication and validation
+   
    -singup
+   
    -login
+   
    -logout
+   
    above functions are being implemented using JSON WEB TOKEN
    
    user will not be allowed to access the data without logging in
