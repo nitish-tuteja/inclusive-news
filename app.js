@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const { requireAuth, checkUser} = require('./middleware/authMiddleware');
 
 const app = express();
-
+const PORT = process.env.PORT;
 // middleware
 app.use(express.static('public'));
 app.use(express.json());
@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 // database connection
 const dbURI = 'mongodb+srv://nitish:youare1234@cluster0.zpnyb.mongodb.net/node-auth';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
-  .then((result) => app.listen(3000))
+  .then((result) => app.listen(PORT))
   .catch((err) => console.log(err));
 
 // routes
