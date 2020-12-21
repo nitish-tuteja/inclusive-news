@@ -20,6 +20,9 @@
         "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
     
   },
+   "engines": {
+        "node": "=12.19.0"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iamshaunjp/node-express-jwt-auth.git"
